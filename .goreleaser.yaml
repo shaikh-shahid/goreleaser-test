@@ -74,14 +74,14 @@ chocolateys:
 
     # Your app's project url.
     # It is a required field.
-    project_url: https://example.com/
+    project_url: https://veracode.com/
 
     # URL which is determined by the given Token (github,
     # gitlab or gitea).
     #
     # Default: depends on the git remote
     # Templates: allowed
-    url_template: "https://github.com/foo/bar/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+    url_template: "github.com/shaikh-shahid/goreleaser-test/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
 
     # App's icon.
     icon_url: 'https://rawcdn.githack.com/foo/bar/efbdc760-395b-43f1-bf69-ba25c374d473/icon.png'
@@ -123,7 +123,7 @@ chocolateys:
     # Supports markdown. To prevent the need to continually update this field,
     # providing a URL to an external list of Release Notes is perfectly
     # acceptable.
-    release_notes: "https://github.com/foo/bar/releases/tag/v{{ .Version }}"
+    release_notes: "github.com/shaikh-shahid/goreleaser-test/releases/tag/v{{ .Version }}"
 
     # App's dependencies
     # The version is not required.
