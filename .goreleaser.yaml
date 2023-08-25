@@ -51,7 +51,7 @@ chocolateys:
     # If you want a good separator for words, use '-', not  '.'.
     #
     # Default: ProjectName
-    name: foo
+    name: goreleaser-test
 
     # IDs of the archives to use.
     # Empty means all IDs.
@@ -98,7 +98,7 @@ chocolateys:
     require_license_acceptance: false
 
     # Your app's source url.
-    project_source_url: https://github.com/foo/bar
+    project_source_url: https://github.com/https://github.com/shaikh-shahid/goreleaser-test
 
     # Your app's documentation url.
     docs_url: https://github.com/foo/bar/blob/main/README.md
@@ -142,7 +142,7 @@ chocolateys:
     # Setting this will prevent goreleaser to actually try to push the package
     # to chocolatey repository, leaving the responsibility of publishing it to
     # the user.
-    skip_publish: false
+    skip_publish: true
 
     # GOAMD64 to specify which amd64 version to use if there are multiple
     # versions from the build section.
