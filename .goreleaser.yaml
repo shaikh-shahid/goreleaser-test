@@ -44,6 +44,7 @@ changelog:
 # yaml-language-server: $schema=https://goreleaser.com/static/schema.json
 # vim: set ts=2 sw=2 tw=0 fo=cnqoj
 
+# .goreleaser.yaml
 chocolateys:
   -
     # Your app's package name.
@@ -51,26 +52,23 @@ chocolateys:
     # If you want a good separator for words, use '-', not  '.'.
     #
     # Default: ProjectName
-    name: goreleaser-test
+    name: {{ .ProjectName }}
 
     # IDs of the archives to use.
     # Empty means all IDs.
-    ids:
-      - foo
-      - bar
 
     # Your app's owner.
     # It basically means your.
-    owners: Drum Roll Inc
+    owners: Shahid Shaikh
 
     # The app's title.
     # A human-friendly title of the package.
     #
     # Default: ProjectName
-    title: Foo Bar
+    title: {{ .ProjectName }}
 
     # Your app's authors (probably you).
-    authors: Drummer
+    authors: Shahid SHaikh
 
     # Your app's project url.
     # It is a required field.
@@ -81,7 +79,7 @@ chocolateys:
     #
     # Default: depends on the git remote
     # Templates: allowed
-    url_template: "https://github.com/shaikh-shahid/goreleaser-test/releases/download/v0.1.0/goreleaser-test_Windows_x86_64.zip"
+    url_template: https://github.com/shaikh-shahid/goreleaser-test/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
 
     # App's icon.
     icon_url: 'https://rawcdn.githack.com/foo/bar/efbdc760-395b-43f1-bf69-ba25c374d473/icon.png'
@@ -90,7 +88,6 @@ chocolateys:
     copyright: 2022 Drummer Roll Inc
 
     # App's license information url.
-    license_url: https://github.com/foo/bar/blob/main/LICENSE
 
     # Your apps's require license acceptance:
     # Specify whether the client must prompt the consumer to accept the package
@@ -100,14 +97,8 @@ chocolateys:
     # Your app's source url.
     project_source_url: https://github.com/shaikh-shahid/goreleaser-test
 
-    # Your app's documentation url.
-    docs_url: https://github.com/foo/bar/blob/main/README.md
-
     # App's bugtracker url.
-    bug_tracker_url: https://github.com/foo/barr/issues
-
-    # Your app's tag list.
-    tags: "foo bar baz"
+    bug_tracker_url: https://github.com/shaikh-shahid/goreleaser-test/issues
 
     # Your app's summary:
     summary: Software to create fast and easy drum rolls.
@@ -123,7 +114,7 @@ chocolateys:
     # Supports markdown. To prevent the need to continually update this field,
     # providing a URL to an external list of Release Notes is perfectly
     # acceptable.
-    release_notes: "github.com/shaikh-shahid/goreleaser-test/releases/tag/v{{ .Version }}"
+    release_notes: "https://github.com/shaikh-shahid/goreleaser-test/releases/tag/v{{ .Version }}"
 
     # App's dependencies
     # The version is not required.
@@ -134,7 +125,7 @@ chocolateys:
     # The api key that should be used to push to the chocolatey repository.
     #
     # WARNING: do not expose your api key in the configuration file!
-    api_key: 'a9f02485-a6b6-4b5a-8c7f-d5fd8f4ec30f'
+    api_key: '{{ .Env.CHOCOLATEY_API_KEY }}'
 
     # The source repository that will push the package to.
     source_repo: "https://push.chocolatey.org/"
@@ -149,3 +140,4 @@ chocolateys:
     #
     # Default: 'v1'
     goamd64: v1
+
