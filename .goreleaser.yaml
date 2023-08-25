@@ -81,7 +81,7 @@ chocolateys:
     #
     # Default: depends on the git remote
     # Templates: allowed
-    url_template: "https://github.com/shaikh-shahid/goreleaser-test/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+    url_template: "https://github.com/shaikh-shahid/goreleaser-test/releases/download/v0.1.0/goreleaser-test_Windows_x86_64.zip"
 
     # App's icon.
     icon_url: 'https://rawcdn.githack.com/foo/bar/efbdc760-395b-43f1-bf69-ba25c374d473/icon.png'
