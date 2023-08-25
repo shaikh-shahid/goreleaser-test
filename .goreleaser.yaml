@@ -52,7 +52,7 @@ chocolateys:
     # If you want a good separator for words, use '-', not  '.'.
     #
     # Default: ProjectName
-    name: {{ .ProjectName }}
+    name: '{{ .ProjectName }}'
 
     # IDs of the archives to use.
     # Empty means all IDs.
@@ -65,7 +65,7 @@ chocolateys:
     # A human-friendly title of the package.
     #
     # Default: ProjectName
-    title: {{ .ProjectName }}
+    title: '{{ .ProjectName }}'
 
     # Your app's authors (probably you).
     authors: Shahid SHaikh
