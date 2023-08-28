@@ -52,7 +52,7 @@ chocolateys:
     # If you want a good separator for words, use '-', not  '.'.
     #
     # Default: ProjectName
-    name: 'Goreleaser test'
+    name: 'Goreleasertest'
 
     # IDs of the archives to use.
     # Empty means all IDs.
