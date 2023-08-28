@@ -82,7 +82,7 @@ chocolateys:
     url_template: https://github.com/shaikh-shahid/goreleaser-test/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
 
     # App's icon.
-    icon_url: 'https://rawcdn.githack.com/foo/bar/efbdc760-395b-43f1-bf69-ba25c374d473/icon.png'
+    #icon_url: 'https://rawcdn.githack.com/foo/bar/efbdc760-395b-43f1-bf69-ba25c374d473/icon.png'
 
     # Your app's copyright details.
     copyright: 2022 Drummer Roll Inc
@@ -99,6 +99,8 @@ chocolateys:
 
     # App's bugtracker url.
     bug_tracker_url: https://github.com/shaikh-shahid/goreleaser-test/issues
+
+    tags: "goreleasertest accion"
 
     # Your app's summary:
     summary: Software to create fast and easy drum rolls.
