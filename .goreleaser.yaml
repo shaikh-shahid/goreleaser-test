@@ -133,7 +133,7 @@ chocolateys:
     # Setting this will prevent goreleaser to actually try to push the package
     # to chocolatey repository, leaving the responsibility of publishing it to
     # the user.
-    skip_publish: true
+    skip_publish: false
 
     # GOAMD64 to specify which amd64 version to use if there are multiple
     # versions from the build section.
