@@ -52,7 +52,7 @@ chocolateys:
     # If you want a good separator for words, use '-', not  '.'.
     #
     # Default: ProjectName
-    name: '{{ .ProjectName }}'
+    name: 'Goreleaser test'
 
     # IDs of the archives to use.
     # Empty means all IDs.
@@ -65,7 +65,7 @@ chocolateys:
     # A human-friendly title of the package.
     #
     # Default: ProjectName
-    title: '{{ .ProjectName }}'
+    title: 'Goreleaser test'
 
     # Your app's authors (probably you).
     authors: Shahid SHaikh
@@ -106,7 +106,7 @@ chocolateys:
     # This the description of your chocolatey package.
     # Supports markdown.
     description: |
-      {{ .ProjectName }} installer package.
+      Goreleaser test installer package.
       Software to create fast and easy drum rolls.
 
     # Your app's release notes.
