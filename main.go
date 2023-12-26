@@ -27,7 +27,7 @@ func TestGetUserInput(t *testing.T) {
 
 	// Check if the result and error are as expected
 	if err != nil {
-		t.Errorf("Expected no error, got %v", err)
+		t.Errorf("Expected no error, got this error%v", err)
 	}
 	expectedResult := "test input"
 	if result != expectedResult {
